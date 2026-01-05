@@ -1,0 +1,112 @@
+html {
+    background-color: rgb(196, 246, 255);
+
+}
+
+.header {
+    text-align: end;
+    font-size: 2rem;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header a:hover {
+    color: blue;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header>span {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.id1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    padding: 100px;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+.header span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.header.scrolled {
+    background-color: #111;
+}
+
+.header.scrolled a,
+.header.scrolled span {
+    color: white;
+}
+
+#features .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#features .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#features .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(13, 110, 253, 0.15),
+            rgba(0, 0, 0, 0.15));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#features .card:hover::before {
+    opacity: 1;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6fe7ff, #4facfe);
+
+    background-color: #6fe7ff;
+}
+
+body {
+    margin: 0;
+}
+.header a:hover {
+    background-color:black;
+    color: white;
+}
